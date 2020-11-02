@@ -3,6 +3,24 @@ name: CI
 on: push
 
 jobs:
+  install:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - uses: actions/checkout@v2
+
+      - name: run a one-line script
+        run: echo "hello install!"
+  
+  test:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - uses: actions/checkout@v2
+
+      - name: run a one-line script
+        run: echo "hello test!"
+  
   build:
     runs-on: ubuntu-latest
 
@@ -10,5 +28,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: run a one-line script
-        run: echo "hello github action ci!"
-        
+        run: echo "hello build!"
