@@ -6,26 +6,26 @@ jobs:
   install:
     runs-on: ubuntu-latest
 
-    steps: 
+    steps:
       - uses: actions/checkout@v2
 
       - name: run a one-line script
         run: echo "hello install!"
-  
+
   test:
     runs-on: ubuntu-latest
 
-    steps: 
+    steps:
       - uses: actions/checkout@v2
 
       - name: run a one-line script
         run: echo "hello test!"
-  
+
   build:
     runs-on: ubuntu-latest
 
-    steps: 
+    steps:
       - uses: actions/checkout@v2
 
       - name: run a one-line script
-        run: echo "hello build!"
+        run: echo "hello build cicd!"
